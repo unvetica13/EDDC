@@ -1,0 +1,53 @@
+body {
+  background-color: #fff;
+}
+
+
+
+svg {
+  max-width: 100%;
+  max-height: 160%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+svg path {
+  stroke: #232323;
+  stroke-width: .3;
+  stroke-dasharray: 2810;
+  stroke-dashoffset: 2810;
+  animation: draw 90s linear forwards;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 2810;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@media (max-width: 575px) {
+  
+
+  svg {
+    max-width: 100%;
+    max-height: 90%;
+    position: absolute;
+    top: -210px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+
+
+}
